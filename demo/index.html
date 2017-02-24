@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script>
+        $.ajax({
+            'type':'POST',
+            'contentType': 'application/json',
+            'dataType': 'json',
+            'url':'/',
+            'data':JSON.stringify([
+                {
+                    "jsonrpc":"2.0",
+                    "id":"2.02132132132132132131312",
+                    "method":"user.get_user_info",
+                    "params":{
+                        "uid":20
+                    }
+                },
+                {
+                    "jsonrpc":"2.0",
+                    "id":"2.21232fdasdsad63dfas1223sda",
+                    "method":"user.get_user_list",
+                    "params":{
+                        "start":0,
+                        "limit":20
+                    }
+                },
+                {
+                    "jsonrpc":"2.0",
+                    "id":"2.dfas1223s21232fdasdsad63da",
+                    "method":"product.get_product_info",
+                    "params":{
+                        "pid":20
+                    }
+                },
+                {
+                    "jsonrpc":"2.0",
+                    "id":"2.dfas1223s21232fdasdsad63da",
+                    "method":"product.get_product_list",
+                    "params":{}
+                }
+            ]),
+            'success':function (res) {
+                console.log(222)
+            }
+        });
+    </script>
+</body>
+</html>

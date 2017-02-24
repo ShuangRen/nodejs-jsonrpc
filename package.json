@@ -1,0 +1,16 @@
+{
+  "name": "node-jsonrpc",
+  "version": "1.0.0",
+  "description": "jsonrpc for nodejs by http",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShuangRen/nodejs-jsonrpc.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "shuangren",
+  "license": "ISC",
+  "dependencies": {}
+}
